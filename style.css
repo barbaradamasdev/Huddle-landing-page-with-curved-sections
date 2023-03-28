@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* Fonts */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Variables */
+:root {
+  --PINK: hsl(322, 100%, 66%);
+  --PINK-LIGHT: hsl(321, 100%, 78%);
+  --RED-LIGHT: hsl(0, 100%, 63%);
+  --CYAN-DARK: hsl(192, 100%, 9%);
+  --BLUE-LIGHT: hsl(207, 100%, 98%);
+
+  --padding20px: 1.25 rem;
+}
+
+/* Button proprieties */
+button {
+  background-color: var(--PINK);
+  color: white;
+  border-radius: 1.2rem;
+  border: 1px solid var(--PINK);
+  padding: 0.7rem 2.2rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.404);
+  margin: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--PINK-LIGHT);
+  border: 1px solid var(--PINK-LIGHT);
+}
+
+.white-button {
+  background-color: white;
+  color: var(--PINK-LIGHT);
+  border-radius: 1rem;
+  border: 1px solid var(--PINK);
+  padding: 0.3rem 1rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  opacity: 70%;
+  box-shadow: none;
+  margin: 1rem;
+}
+
+.white-button:hover {
+  background-color: white;
+  color: var(--PINK-LIGHT);
+  opacity: 80%;
+}
+
+/* General proprieties */
+
+.image {
+  max-width: 80vw;
+}
+
+body {
+  text-align: center;
+  color: var(--CYAN-DARK);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  align-items: center;
+}
+
+header img {
+  width: 5.5rem; /* 88px; */
+  margin: 1rem;
+}
+
+/* Section 1 - banner */
+
+.main__banner {
+  margin: 1.8rem;
+  padding-top: 2rem;
+}
+
+.main__banner h1 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.main__banner p {
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  max-width: 430px;
+  margin: auto;
+}
+
+.main__banner img {
+  margin: 4rem 0;
+}
+
+.main__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__data .left,
+.main__data .right {
+  padding: 1.5rem;
+}
+
+.main__data figure {
+  text-align: left;
+}
+.main__data img {
+  width: 1.8rem;
+  margin: 0;
+}
+
+.main__data h2 {
+  font-size: 3.7rem;
+  font-weight: 700;
+}
+
+.main__data .right h2 {
+  font-size: 3.1rem;
+}
+
+.main__data p {
+  opacity: 70%;
+  padding: 0;
+}
+
+/* Section 2 - cards */
+
+.main__cards {
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 1rem 2rem 4rem;
+  gap: 2rem;
+}
+
+.main__cards h3 {
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+
+.main__cards p {
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+.main__cards img {
+  margin: 2rem 0;
+  max-width: 283px;
+}
+
+/* BG */
+.one,
+.three {
+  background-color: var(--BLUE-LIGHT);
+}
+
+.space__before-one {
+  background-image: url(images/bg-section-top-mobile-1.svg);
+}
+
+.space__after-one {
+  background-image: url(images/bg-section-bottom-mobile-1.svg);
+}
+
+.space__before-three {
+  background-image: url(images/bg-section-top-mobile-2.svg);
+}
+
+.space__after-three {
+  background-image: url(images/bg-section-bottom-mobile-2.svg);
+}
+
+.space__before-one,
+.space__after-one,
+.space__before-three,
+.space__after-three {
+  display: block;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 100vw 100px;
+  background-position: center center;
+}
+
+/* CTA section */
+
+.main__cta-invite {
+  margin: 9rem 0;
+}
+
+.main__cta-invite h4 {
+  font-size: 1.6rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--CYAN-DARK);
+  color: white;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 4rem 0 1rem;
+  text-align: left;
+  margin-top: -2px;
+  position: relative;
+}
+.space__before-footer {
+  background-image: url(images/bg-footer-top-mobile.svg);
+  display: block;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 100vw 100px;
+  background-position: center center;
+}
+
+.footer__section {
+  margin: 0 2rem;
+}
+
+footer h5 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+footer p {
+  font-size: 0.9rem;
+  line-height: 22px;
+  margin: 0.5rem 0;
+}
+
+/* Newsletter */
+
+.footer__newsletter__input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.footer__newsletter__input input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.footer__newsletter__input button {
+  margin: 0 0 0 auto;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  box-shadow: none;
+}
+
+input[type="email"] {
+  padding: 0 10px;
+}
+
+/* Contact */
+
+.whiteLogo {
+  transform: scale(75%);
+  margin-left: -30px;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__contact img {
+  width: 18px;
+  height: 16px;
+}
+
+.footer__section__socialMedia {
+  margin: 4rem 0;
+  display: flex;
+  gap: 2rem;
+}
+.footer__section__socialMedia a {
+  text-decoration: none;
+  transform: scale(170%);
+}
+
+.footer__section__info {
+  margin: 2rem 0;
+}
+
+/* Responsive - all content 700px */
+@media screen and (min-width: 700px) {
+  /* HEADER */
+  header {
+    padding: 0.8rem 4rem;
+    margin: 2rem auto;
+    max-width: 1440px;
+  }
+
+  header img {
+    width: 14rem;
+  }
+
+  .white-button {
+    font-weight: 200;
+    color: var(--PINK);
+    opacity: 100%;
+    transform: scale(170%);
+  }
+
+  /* Banner */
+
+  .main__banner {
+    padding-top: 6rem;
+  }
+  .main__banner h1 {
+    font-size: 3rem;
+  }
+
+  .main__banner p {
+    font-size: 1.2rem;
+  }
+
+  button {
+    transform: scale(170%);
+  }
+
+  .main__data {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1035px;
+
+    margin: auto;
+    margin-bottom: 165px;
+  }
+
+  .main__data img {
+    width: 3.2rem;
+  }
+
+  .main__data h2,
+  .main__data .right h2 {
+    font-size: 5.5rem;
+    font-weight: 600;
+  }
+
+  /* Section 2 */
+
+  .main__cards {
+    flex-direction: row;
+    text-align: left;
+    padding: 2rem 4rem;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: auto;
+    /* max-width: 1440px; */
+  }
+
+  .main__cards__text {
+    padding: 0 6rem;
+    max-width: 500px;
+  }
+  .main__cards__img {
+    max-width: 500px;
+  }
+
+  .main__cards img {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+
+  .main__cards h3 {
+    font-size: 2.3rem;
+  }
+  .main__cards p {
+    font-size: 1rem;
+  }
+
+  .main__cards.reverse-card {
+    flex-direction: row-reverse;
+  }
+  /* BG */
+
+  .space__before-one {
+    background-image: url(images/bg-section-top-desktop-1.svg);
+  }
+
+  .space__after-one {
+    background-image: url(images/bg-section-bottom-desktop-1.svg);
+  }
+
+  .space__before-three {
+    background-image: url(images/bg-section-top-desktop-2.svg);
+  }
+
+  .space__after-three {
+    background-image: url(images/bg-section-bottom-desktop-2.svg);
+  }
+
+  /* CTA section */
+
+  .main__cta-invite h4 {
+    font-size: 2.5rem;
+  }
+
+  .main__cta-invite button {
+    transform: scale(190%);
+  }
+
+  /* Footer */
+  .space__before-footer {
+    background-image: url(images/bg-footer-top-desktop.svg);
+  }
+
+  footer {
+    flex-direction: row;
+    padding: 6rem 3rem 4rem;
+    gap: 9rem;
+    margin: auto;
+    justify-content: center;
+  }
+
+  footer p {
+    margin-right: 11rem;
+  }
+
+  .footer__section {
+    max-width: 500px;
+  }
+
+  .footer__section__info {
+    margin-top: 0;
+  }
+
+  .footer__newsletter__input {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .footer__newsletter__input input {
+    width: 60%;
+  }
+
+  .footer__newsletter__input button {
+    transform: scale(100%);
+    margin: 0;
+  }
+}
+
+/* Responsive cards - 376px to 1000px */
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .main__cards {
+    gap: 0;
+  }
+
+  .main__cards__text {
+    padding: 0px 40px;
+  }
+
+  .main__cards__img img {
+    min-width: 300px;
+  }
+}
+
+/* Responsive Footer between 700px and 1064px */
+@media screen and (min-width: 700px) and (max-width: 1064px) {
+  .footer__section p {
+    margin: 8px 0;
+  }
+  footer {
+    gap: 30px;
+  }
+
+  input {
+    width: 100%;
+    min-width: 290px;
+  }
+
+  .footer__newsletter__input {
+    flex-direction: column;
+  }
+}
